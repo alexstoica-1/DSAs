@@ -6,6 +6,10 @@ from utils import (
     level_order,
     printer
 )
+from depth import (
+    height_rec,
+    height_level
+)
 
 class Node:
     def __init__(self, d):
@@ -51,3 +55,5 @@ if __name__ == '__main__':
     # Perform level order traversal and get the result
     res = level_order(root)
     printer(res)
+
+    print(f"\nThe depth of the tree is: {height_level(root)}.")
